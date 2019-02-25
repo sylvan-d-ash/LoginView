@@ -22,6 +22,7 @@
 		5E5100932222D80000306DBD /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5100922222D80000306DBD /* Webservice.swift */; };
 		5E5100952223D82B00306DBD /* WebError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5100942223D82B00306DBD /* WebError.swift */; };
 		5E5100982223E86A00306DBD /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5100972223E86A00306DBD /* UIViewController.swift */; };
+		5E51009B2223EC2300306DBD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E51009A2223EC2300306DBD /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		5E5100922222D80000306DBD /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		5E5100942223D82B00306DBD /* WebError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebError.swift; sourceTree = "<group>"; };
 		5E5100972223E86A00306DBD /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		5E51009A2223EC2300306DBD /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				5E5100972223E86A00306DBD /* UIViewController.swift */,
+				5E51009A2223EC2300306DBD /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E51003222202E4300306DBD /* LoginConfigurator.swift in Sources */,
+				5E51009B2223EC2300306DBD /* UIColor.swift in Sources */,
 				5E5100952223D82B00306DBD /* WebError.swift in Sources */,
 				5E51002C222022FA00306DBD /* LoginViewController.swift in Sources */,
 				5E5100982223E86A00306DBD /* UIViewController.swift in Sources */,
