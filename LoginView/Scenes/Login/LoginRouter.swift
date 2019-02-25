@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+class LoginRouter: LoginRouterProtocol {
+    func goToNextScene() {
+        //
+    }
+}
