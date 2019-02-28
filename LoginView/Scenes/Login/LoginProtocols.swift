@@ -7,13 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
 
 // MARK:- Configurator
 
 
 protocol ConfiguratorProtocol {
-    func configure<T>(viewController: T)
+    func configure<T: UIViewController>(_ view: T)
 }
 
 
@@ -32,7 +33,7 @@ protocol LoginRouterProtocol {
 
 
 protocol LoginInteractorProtocol: class {
-    typealias LoginInteractorCompletion = (Any?) -> Void
+    typealias LoginInteractorCompletion = (Bool) -> Void
     func login(username: String, password: String, completion: @escaping LoginInteractorCompletion)
 }
 
@@ -41,8 +42,6 @@ protocol LoginInteractorProtocol: class {
 
 
 protocol LoginPresenterProtocol {
-    var view: LoginViewProtocol! { get }
-    var router: LoginRouterProtocol { get }
     func viewDidLoad()
     func login(with username: String?, and password: String?)
 }

@@ -37,6 +37,14 @@ class LoginPresenter: LoginPresenterProtocol {
             self.view.hideLoading()
 
             // process result
+            guard result else {
+                // if failed, show error
+                self.view.showError("Login failed", with: "Login Error")
+                return
+            }
+
+            // if successful, go to next scene
+            self.router.goToNextScene()
         }
     }
 }

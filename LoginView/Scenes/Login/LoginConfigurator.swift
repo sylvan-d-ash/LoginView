@@ -7,15 +7,22 @@
 //
 
 import Foundation
+import UIKit
 
 
 class LoginConfigurator: LoginConfiguratorProtocol {
-    func configure<T>(viewController: T) {
+    var window: UIWindow?
+    
+    init(window: UIWindow?) {
+        self.window = window
+    }
+
+    func configure<T: UIViewController>(_ view: T) {
         
-        guard let loginViewController = viewController as? LoginViewController else { return }
+        guard let loginViewController = view as? LoginViewController else { return }
 
         let loginGateway = Webservice()
-        let router = LoginRouter()
+        let router = LoginRouter(window: self.window)
         let interactor = LoginInteractor(loginGateway: loginGateway)
         let presenter = LoginPresenter(view: loginViewController, interactor: interactor, router: router)
 

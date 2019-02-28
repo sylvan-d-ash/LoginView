@@ -22,8 +22,8 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // configure dependencies
-        let configurator = LoginConfigurator()
-        configurator.configure(viewController: self)
+        let configurator = LoginConfigurator(window: UIApplication.shared.keyWindow)
+        configurator.configure(self)
 
         // setup UI
         self.setupUI()
@@ -40,7 +40,7 @@ class LoginViewController: UIViewController {
 
 private extension LoginViewController {
     func setupUI() {
-        //
+        // do any setup here such as rounding corners, shadows, borders, delegates
     }
 
     func login() {
