@@ -28,7 +28,7 @@ class LoginRouter: LoginRouterProtocol {
         let homeViewController = storyboard.instantiateInitialViewController() as! HomeViewController
 
         // configure the view
-        let configurator = HomeViewConfigurator()
+        let configurator = HomeViewConfig()
         configurator.configure(homeViewController)
 
         // transition to the view

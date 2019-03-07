@@ -1,5 +1,5 @@
 //
-//  HomeViewConfigurator.swift
+//  HomeViewConfig.swift
 //  LoginView
 //
 //  Created by Sylvan Ash on 01/03/2019.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-protocol HomeViewConfiguratorProtocol: ConfiguratorProtocol { }
+protocol HomeViewConfigProtocol: ConfigProtocol { }
 
 
-class HomeViewConfigurator: HomeViewConfiguratorProtocol {
+class HomeViewConfig: HomeViewConfigProtocol {
     func configure<T: UIViewController>(_ view: T) {
         guard let homeViewController = view as? HomeViewController else { return }
         let presenter = HomeViewPresenter(view: homeViewController)

@@ -1,5 +1,5 @@
 //
-//  LoginConfigurator.swift
+//  LoginConfig.swift
 //  LoginView
 //
 //  Created by Sylvan Ash on 22/02/2019.
@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class LoginConfigurator: LoginConfiguratorProtocol {
+class LoginConfig: LoginConfigProtocol {
     var window: UIWindow?
     
     init(window: UIWindow?) {

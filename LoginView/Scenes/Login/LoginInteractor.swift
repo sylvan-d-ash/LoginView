@@ -27,7 +27,7 @@ class LoginInteractor: LoginInteractorProtocol {
                 else { return }
 
             // login was successful
-            completion(true)
+            completion(true, nil)
         }
     }
 }

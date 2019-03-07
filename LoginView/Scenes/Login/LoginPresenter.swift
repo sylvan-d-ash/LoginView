@@ -10,8 +10,8 @@ import Foundation
 
 
 class LoginPresenter: LoginPresenterProtocol {
-    weak var view: LoginViewProtocol!
-    var router: LoginRouterProtocol
+    private weak var view: LoginViewProtocol!
+    private var router: LoginRouterProtocol
     private let interactor: LoginInteractorProtocol
 
     init(view: LoginViewProtocol, interactor: LoginInteractorProtocol, router: LoginRouterProtocol) {
@@ -29,17 +29,17 @@ class LoginPresenter: LoginPresenterProtocol {
         // show loading view
         self.view.showLoading()
 
-        self.interactor.login(username: username, password: password) { [weak self] (result) in
+        self.interactor.login(username: username, password: password) { [weak self] (result, error) in
 
             guard let `self` = self else { return }
 
             // hide loading view
             self.view.hideLoading()
 
-            // process result
-            guard result else {
+            // check for errors
+            if let error = error {
                 // if failed, show error
-                self.view.showError("Login failed", with: "Login Error")
+                self.view.showError(error.localizedDescription, with: "Login Error")
                 return
             }
 

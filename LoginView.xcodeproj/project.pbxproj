@@ -17,7 +17,7 @@
 		5E51002C222022FA00306DBD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E51002B222022FA00306DBD /* LoginViewController.swift */; };
 		5E51002E22202E0D00306DBD /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E51002D22202E0D00306DBD /* LoginInteractor.swift */; };
 		5E51003022202E3400306DBD /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E51002F22202E3400306DBD /* LoginRouter.swift */; };
-		5E51003222202E4300306DBD /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E51003122202E4300306DBD /* LoginConfigurator.swift */; };
+		5E51003222202E4300306DBD /* LoginConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E51003122202E4300306DBD /* LoginConfig.swift */; };
 		5E51003422202E4E00306DBD /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E51003322202E4E00306DBD /* LoginProtocols.swift */; };
 		5E5100932222D80000306DBD /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5100922222D80000306DBD /* Webservice.swift */; };
 		5E5100952223D82B00306DBD /* WebError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5100942223D82B00306DBD /* WebError.swift */; };
@@ -26,8 +26,12 @@
 		5E5100D022289FFD00306DBD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5100CF22289FFD00306DBD /* HomeViewController.swift */; };
 		5E5100D22228A02200306DBD /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5100D12228A02200306DBD /* HomeViewPresenter.swift */; };
 		5E5100D42228A02D00306DBD /* HomeViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5100D32228A02D00306DBD /* HomeViewProtocols.swift */; };
-		5E5100D62228A03600306DBD /* HomeViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5100D52228A03600306DBD /* HomeViewConfigurator.swift */; };
+		5E5100D62228A03600306DBD /* HomeViewConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5100D52228A03600306DBD /* HomeViewConfig.swift */; };
 		5E5100D82228A20600306DBD /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E5100D72228A20600306DBD /* Home.storyboard */; };
+		5E5100E22231532E00306DBD /* LoginPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5100E12231532E00306DBD /* LoginPresenterSpec.swift */; };
+		5E5100E62231539200306DBD /* LoginViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5100E52231539200306DBD /* LoginViewSpy.swift */; };
+		5E5100E82231555000306DBD /* LoginRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5100E72231555000306DBD /* LoginRouterSpy.swift */; };
+		5E5100EA2231555B00306DBD /* LoginInteractorStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5100E92231555B00306DBD /* LoginInteractorStub.swift */; };
 		80667C3D03CA1500282BA733 /* Pods_LoginViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D6B77597135CA568CD34D6 /* Pods_LoginViewTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +59,7 @@
 		5E51002B222022FA00306DBD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5E51002D22202E0D00306DBD /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		5E51002F22202E3400306DBD /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
-		5E51003122202E4300306DBD /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		5E51003122202E4300306DBD /* LoginConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfig.swift; sourceTree = "<group>"; };
 		5E51003322202E4E00306DBD /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
 		5E5100922222D80000306DBD /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		5E5100942223D82B00306DBD /* WebError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebError.swift; sourceTree = "<group>"; };
@@ -64,8 +68,12 @@
 		5E5100CF22289FFD00306DBD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5E5100D12228A02200306DBD /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
 		5E5100D32228A02D00306DBD /* HomeViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocols.swift; sourceTree = "<group>"; };
-		5E5100D52228A03600306DBD /* HomeViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewConfigurator.swift; sourceTree = "<group>"; };
+		5E5100D52228A03600306DBD /* HomeViewConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewConfig.swift; sourceTree = "<group>"; };
 		5E5100D72228A20600306DBD /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		5E5100E12231532E00306DBD /* LoginPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenterSpec.swift; sourceTree = "<group>"; };
+		5E5100E52231539200306DBD /* LoginViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewSpy.swift; sourceTree = "<group>"; };
+		5E5100E72231555000306DBD /* LoginRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouterSpy.swift; sourceTree = "<group>"; };
+		5E5100E92231555B00306DBD /* LoginInteractorStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorStub.swift; sourceTree = "<group>"; };
 		67CB88A5CC2903D43E8F40BA /* Pods-LoginView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginView/Pods-LoginView.debug.xcconfig"; sourceTree = "<group>"; };
 		7783F79E467DB17878BE2AD6 /* Pods_LoginView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BA6918F2786164B5A08381 /* Pods-LoginViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginViewTests/Pods-LoginViewTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +136,7 @@
 		5E510019222022A100306DBD /* LoginViewTests */ = {
 			isa = PBXGroup;
 			children = (
+				5E5100E42231537200306DBD /* Login */,
 				5E51001A222022A100306DBD /* LoginViewTests.swift */,
 				5E51001C222022A200306DBD /* Info.plist */,
 			);
@@ -156,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				5E51003322202E4E00306DBD /* LoginProtocols.swift */,
-				5E51003122202E4300306DBD /* LoginConfigurator.swift */,
+				5E51003122202E4300306DBD /* LoginConfig.swift */,
 				5E51002F22202E3400306DBD /* LoginRouter.swift */,
 				5E51002D22202E0D00306DBD /* LoginInteractor.swift */,
 				5E510029222022F200306DBD /* LoginPresenter.swift */,
@@ -188,12 +197,31 @@
 			isa = PBXGroup;
 			children = (
 				5E5100D32228A02D00306DBD /* HomeViewProtocols.swift */,
-				5E5100D52228A03600306DBD /* HomeViewConfigurator.swift */,
+				5E5100D52228A03600306DBD /* HomeViewConfig.swift */,
 				5E5100CF22289FFD00306DBD /* HomeViewController.swift */,
 				5E5100D12228A02200306DBD /* HomeViewPresenter.swift */,
 				5E5100D72228A20600306DBD /* Home.storyboard */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		5E5100E32231536800306DBD /* Test Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				5E5100E52231539200306DBD /* LoginViewSpy.swift */,
+				5E5100E72231555000306DBD /* LoginRouterSpy.swift */,
+				5E5100E92231555B00306DBD /* LoginInteractorStub.swift */,
+			);
+			path = "Test Doubles";
+			sourceTree = "<group>";
+		};
+		5E5100E42231537200306DBD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5E5100E32231536800306DBD /* Test Doubles */,
+				5E5100E12231532E00306DBD /* LoginPresenterSpec.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		5E51FFF92220229B00306DBD = {
@@ -408,6 +436,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E51001B222022A100306DBD /* LoginViewTests.swift in Sources */,
+				5E5100E82231555000306DBD /* LoginRouterSpy.swift in Sources */,
+				5E5100E22231532E00306DBD /* LoginPresenterSpec.swift in Sources */,
+				5E5100E62231539200306DBD /* LoginViewSpy.swift in Sources */,
+				5E5100EA2231555B00306DBD /* LoginInteractorStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E51003222202E4300306DBD /* LoginConfigurator.swift in Sources */,
+				5E51003222202E4300306DBD /* LoginConfig.swift in Sources */,
 				5E51009B2223EC2300306DBD /* UIColor.swift in Sources */,
 				5E5100952223D82B00306DBD /* WebError.swift in Sources */,
 				5E51002C222022FA00306DBD /* LoginViewController.swift in Sources */,
@@ -429,7 +461,7 @@
 				5E5100D42228A02D00306DBD /* HomeViewProtocols.swift in Sources */,
 				5E5100932222D80000306DBD /* Webservice.swift in Sources */,
 				5E5100D022289FFD00306DBD /* HomeViewController.swift in Sources */,
-				5E5100D62228A03600306DBD /* HomeViewConfigurator.swift in Sources */,
+				5E5100D62228A03600306DBD /* HomeViewConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // configure dependencies
-        let configurator = LoginConfigurator(window: UIApplication.shared.keyWindow)
+        let configurator = LoginConfig(window: UIApplication.shared.keyWindow)
         configurator.configure(self)
 
         // setup UI
